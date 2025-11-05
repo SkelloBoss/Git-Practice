@@ -15,12 +15,12 @@ int Partition(int arr[], int low, int high){
     return i;
 }
 
-void quickSort(int arr[], int low, int high){
+void quickSort(int arr[], int low, int high){ //pi to pai
     if(low < high){
-        int pi = Partition(arr, low, high);
-        cout<< arr[pi] << " "; //pivot value
-        quickSort(arr, low, pi-1);
-        quickSort(arr, pi+1, high);
+        int pai = Partition(arr, low, high);
+        cout<< arr[pai] << " "; //pivot value
+        quickSort(arr, low, pai-1);
+        quickSort(arr, pai+1, high);
     }
 }
 
